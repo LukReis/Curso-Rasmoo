@@ -10,5 +10,15 @@ public class EstruturaRepeticao {
             contador++;
         }
 
+        System.out.println("-------------------------------------------");
+
+        for (int count = 0 ; count <=5 ; count++) {
+            System.out.println(count);
+        }
+
+        System.out.println("-------------------------------------------");
+
+
+
     }
 }
