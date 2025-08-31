@@ -5,10 +5,15 @@ public class EstruturaRepeticao {
 
         int contador = 0;
 
-        while(contador <= 5) {
+//        while(contador <= 5) {
+//            System.out.println(contador);
+//            contador++;
+//        }
+
+        do {
             System.out.println(contador);
-            contador++;
-        }
+             contador++;
+        } while (contador <= 5);
 
         System.out.println("-------------------------------------------");
 
