@@ -7,4 +7,21 @@ public class Conta {
     String titular;
     double saldo;
 
+    void depositar(double valor) {
+        saldo += valor;
+    }
+
+    boolean sacar(double valor) {
+        if (saldo >= valor) {
+
+            saldo -= valor;
+            return true;
+
+        } else {
+
+        return false;
+
+        }
+    }
+
 }
