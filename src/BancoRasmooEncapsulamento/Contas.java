@@ -1,17 +1,17 @@
 package BancoRasmooEncapsulamento;
 
-public class Conta {
+public class Contas {
 
     int agencia;
     int numero;
     Cliente titular;
     private double saldo;
 
-    void depositar(double valor) {
+    public void depositar(double valor) {
         saldo += valor;
     }
 
-    boolean sacar(double valor) {
+    public boolean sacar(double valor) {
 
         if (saldo >= valor) {
             saldo -= valor;
@@ -23,7 +23,7 @@ public class Conta {
 
     }
 
-    void tranferir(double valor, Contas contaDestino) {
+    public void tranferir(double valor, Contas contaDestino) {
         if (saldo >= valor) {
             this.sacar(valor);
             contaDestino.depositar(valor);
